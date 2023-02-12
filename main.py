@@ -231,7 +231,7 @@ def genGraph_Murderer():
     vertex_color = ug.new_vertex_property('vector<double>')
     ug.vertex_properties['vertex_color'] = vertex_color
     #ug.vertex_properties['uf'] = plot_uf
-    conn_string = "host='jabot.cos.ufrj.br' dbname='epinions' user='jabot' password='jabot'"
+    conn_string = "host='host_name' dbname='dataset_name' user='user' password='pass'"
     conn = psycopg2.connect(conn_string)
     cursor = conn.cursor()
     
@@ -333,7 +333,7 @@ def genGraph_Sexual_Exploitation():
     vertex_color = ug.new_vertex_property('vector<double>')
     ug.vertex_properties['vertex_color'] = vertex_color
     #ug.vertex_properties['uf'] = plot_uf
-    conn_string = "host='jabot.cos.ufrj.br' dbname='epinions' user='jabot' password='jabot'"
+    conn_string = "host='host_name' dbname='dataset_name' user='user_name' password='pass'"
     conn = psycopg2.connect(conn_string)
     cursor = conn.cursor()
     
@@ -390,7 +390,7 @@ def genGraph():
     #vertex colors
     vertex_color = ug.new_vertex_property('vector<double>')
     ug.vertex_properties['vertex_color'] = vertex_color
-    conn_string = "host='jabot.cos.ufrj.br' dbname='epinions' user='jabot' password='jabot'"
+    conn_string = "host='host_name' dbname='dataset_name' user='user' password='pass'"
     conn = psycopg2.connect(conn_string)
     cursor = conn.cursor()
 
